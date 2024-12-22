@@ -55,6 +55,13 @@ The goal is to compare performance, ease of programming, and scalability for the
 
 ## Installation and Setup
 
+### You can use docker image to have a complete walkthrough of the project by using the following command:
+```bash
+docker pull hussain50/image-processing-project
+```
+Inside the image, you will find a folder named `image-processing` which contains a file named ```image-processing-project.ipynb```
+
+
 1. **Clone the Repository:**
    ```bash
    git clone https://github.com/YourUsername/my-gpu-image-processing-project.git
@@ -78,7 +85,8 @@ nvidia-smi
 ```
 Ensure your GPU is detected.
 
-## Running the Code
+#### Before Running the Code ensure to include a video file and link it in the code, or use your camera directly by changing the line in main function cv::VideoCapture cap("sample.mp4"); to cv::VideoCapture cap(0);
+
 - CPU Baseline:
 ```bash
 cd cpu_baseline
@@ -116,7 +124,7 @@ python numba_main.py
     - acc_profile_report.qdrep
     - cuda_profile_report.qdrep
     - numba_profile_report.qdrep
-- Sample Plots and Tables: See results/charts_and_plots.png for a bar chart of performance comparisons.
+- Sample Plot: See results/chart.png for a bar chart of performance comparisons.
 #### Key Observations:
 
 - CUDA C/C++ showed the best performance (~15x over CPU).
