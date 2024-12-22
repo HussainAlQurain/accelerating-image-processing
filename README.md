@@ -64,7 +64,7 @@ Inside the image, you will find a folder named `image-processing` which contains
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/YourUsername/my-gpu-image-processing-project.git
+   git clone https://github.com/HussainAlQurain/accelerating-image-processing.git
    cd my-gpu-image-processing-project
    ```
 
